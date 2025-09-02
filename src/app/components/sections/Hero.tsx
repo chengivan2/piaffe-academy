@@ -4,6 +4,7 @@
 import React from "react";
 import Header from "../Header";
 import heroContent from "./HeroContent";
+import { motion } from "framer-motion";
 
 
 export default function Hero() {
@@ -11,7 +12,12 @@ export default function Hero() {
     <section className="relative min-w-full min-h-[100vh] bg-[url('/equestrian-horse-jump.jpg')] bg-cover bg-center">
       <div className="absolute inset-0 bg-[#0d0d0d] opacity-20"></div>
       <Header />
-      <div className="relative z-10 flex flex-col justify-center h-full px-8 pt-32 pb-16 max-w-3xl">
+      <motion.div
+        className="relative z-10 flex flex-col justify-center h-full px-8 pt-32 pb-16 max-w-3xl"
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ type: "spring", bounce: 0.6, duration: 1 }}
+      >
         <h1 className="text-white text-6xl font-extrabold leading-tight mb-2">
           {heroContent.heading}
         </h1>
@@ -24,13 +30,7 @@ export default function Hero() {
         <button className="bg-white text-black font-semibold px-6 py-3 rounded shadow hover:bg-gray-200 transition mb-8 w-fit">
           {heroContent.bookNow}
         </button>
-        <div className="flex items-center gap-2">
-          <span className="text-white text-sm rotate-[-90deg] whitespace-nowrap">
-            {heroContent.scrollText}
-          </span>
-          <span className="text-white text-xl">↓</span>
-        </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
