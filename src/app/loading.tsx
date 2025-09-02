@@ -14,12 +14,13 @@ export default function Loading() {
   if (!show) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-white">
       <Image
         src="/equestrian-horse-turn-gif.gif"
         alt="Loading..."
-        fill
-        className="object-cover w-full h-full"
+        width={1240}
+        height={1080}
+        className="object-contain w-full h-full"
         priority
         unoptimized
       />
