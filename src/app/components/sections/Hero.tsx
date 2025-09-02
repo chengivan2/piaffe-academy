@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative min-w-full min-h-[100vh] bg-[url('/equestrian-horse-jump.jpg')] bg-cover bg-center">
+    <section className="relative min-w-full min-h-[100vh] bg-[url('/equestrian-horse-jump.jpg')] bg-cover bg-center bg-fixed">
       <div className="absolute inset-0 bg-[#0d0d0d] opacity-20"></div>
       <Header />
       <div className="relative z-10 flex flex-col justify-center h-full px-8 pt-32 pb-16 max-w-3xl">
