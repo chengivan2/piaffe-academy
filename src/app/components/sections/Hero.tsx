@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import { motion } from "motion/react";
@@ -10,57 +10,50 @@ export default function Hero() {
 
       <header className="absolute top-0 left-0 w-full z-20 flex items-center justify-between px-12 py-8">
         <motion.div
-          initial={{ x: -100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex items-center gap-8"
+          initial={{ y: -80, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
+          className="w-12 h-12 rounded-full border border-white flex items-center justify-center text-white text-lg font-bold"
         >
-          <motion.div
-            initial={{ x: -80, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
-            className="w-12 h-12 rounded-full border border-white flex items-center justify-center text-white text-lg font-bold"
-          >
-            PA
-          </motion.div>
-          <motion.nav
-            initial={{ y: -60, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
-            className="hidden md:flex gap-8 text-white text-sm font-medium"
-          >
-            <a href="#" className="hover:underline">
-              Home
-            </a>
-            <a href="#" className="hover:underline">
-              About
-            </a>
-            <a href="#" className="hover:underline">
-              Sanctuary
-            </a>
-            <a href="#" className="hover:underline">
-              Horses
-            </a>
-            <a href="#" className="hover:underline">
-              Gallery
-            </a>
-          </motion.nav>
+          PA
         </motion.div>
-        <div className="flex items-center gap-6">
-          <motion.span
-            initial={{ y: 60, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.7, delay: 0.6, ease: "easeOut" }}
-            className="text-white text-xs font-medium"
-          >
+        <motion.nav
+          initial={{ y: -80, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.7, delay: 0.25, ease: "easeOut" }}
+          className="hidden md:flex gap-8 text-white text-sm font-medium"
+        >
+          <a href="#" className="hover:underline">
+            Home
+          </a>
+          <a href="#" className="hover:underline">
+            About
+          </a>
+          <a href="#" className="hover:underline">
+            Sanctuary
+          </a>
+          <a href="#" className="hover:underline">
+            Horses
+          </a>
+          <a href="#" className="hover:underline">
+            Gallery
+          </a>
+        </motion.nav>
+        <motion.div
+          initial={{ y: -80, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
+          className="flex items-center gap-3"
+        >
+          <span className="text-white text-xs font-medium">
             +254 712 435 678
-          </motion.span>
+          </span>
           <motion.button
             type="button"
             title="Search Piaffe Academy"
-            initial={{ x: 80, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.7, delay: 0.8, ease: "easeOut" }}
+            initial={{ y: -80, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.7, delay: 0.55, ease: "easeOut" }}
             className="w-10 h-10 flex items-center justify-center rounded-full bg-white/20 hover:bg-white/30"
           >
             <svg
@@ -75,7 +68,7 @@ export default function Hero() {
               <line x1="21" y1="21" x2="16.65" y2="16.65" />
             </svg>
           </motion.button>
-        </div>
+        </motion.div>
       </header>
     </section>
   );
