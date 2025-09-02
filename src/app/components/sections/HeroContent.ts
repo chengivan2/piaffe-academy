@@ -1,4 +1,3 @@
-// Text content for the Hero section
 const heroContent = {
   heading: 'HORSES HAVEN',
   subheading: 'Excellence in equine care',
