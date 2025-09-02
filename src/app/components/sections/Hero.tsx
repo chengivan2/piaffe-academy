@@ -1,16 +1,34 @@
+"use client"
+
 import React from "react";
+import { motion } from "motion/react";
 
 export default function Hero() {
   return (
     <section className="relative min-w-full min-h-[100vh] bg-[url('/equestrian-horse-jump.jpg')] bg-cover bg-center">
       <div className="absolute inset-0 bg-[#0d0d0d] opacity-20"></div>
-      
+
       <header className="absolute top-0 left-0 w-full z-20 flex items-center justify-between px-12 py-8">
-        <div className="flex items-center gap-8">
-          <div className="w-12 h-12 rounded-full border border-white flex items-center justify-center text-white text-lg font-bold">
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="flex items-center gap-8"
+        >
+          <motion.div
+            initial={{ x: -80, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
+            className="w-12 h-12 rounded-full border border-white flex items-center justify-center text-white text-lg font-bold"
+          >
             PA
-          </div>
-          <nav className="hidden md:flex gap-8 text-white text-sm font-medium">
+          </motion.div>
+          <motion.nav
+            initial={{ y: -60, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
+            className="hidden md:flex gap-8 text-white text-sm font-medium"
+          >
             <a href="#" className="hover:underline">
               Home
             </a>
@@ -26,16 +44,23 @@ export default function Hero() {
             <a href="#" className="hover:underline">
               Gallery
             </a>
-          </nav>
-        </div>
+          </motion.nav>
+        </motion.div>
         <div className="flex items-center gap-6">
-          <span className="text-white text-xs font-medium">
+          <motion.span
+            initial={{ y: 60, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.7, delay: 0.6, ease: "easeOut" }}
+            className="text-white text-xs font-medium"
+          >
             +254 712 435 678
-          </span>
-
-          <button
+          </motion.span>
+          <motion.button
             type="button"
             title="Search Piaffe Academy"
+            initial={{ x: 80, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.7, delay: 0.8, ease: "easeOut" }}
             className="w-10 h-10 flex items-center justify-center rounded-full bg-white/20 hover:bg-white/30"
           >
             <svg
@@ -49,7 +74,7 @@ export default function Hero() {
               <circle cx="11" cy="11" r="8" />
               <line x1="21" y1="21" x2="16.65" y2="16.65" />
             </svg>
-          </button>
+          </motion.button>
         </div>
       </header>
     </section>
