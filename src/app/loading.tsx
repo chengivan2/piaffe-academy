@@ -18,10 +18,11 @@ export default function Loading() {
       <Image
         src="/equestrian-horse-turn-gif.gif"
         alt="Loading..."
-        width={600}
-        height={400}
+        width={1920}
+        height={1080}
         className="object-cover w-full h-full"
         priority
+        unoptimized
       />
     </div>
   );
