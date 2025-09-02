@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function Loading() {
@@ -14,12 +15,14 @@ export default function Loading() {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black">
-      <img
+      <Image
         src="/equestrian-horse-turn-gif.gif"
         alt="Loading..."
         width={1920}
         height={1080}
         className="object-cover w-full h-full"
+        priority
+        unoptimized
       />
     </div>
   );
