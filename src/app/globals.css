@@ -22,3 +22,7 @@ body {
   background: var(--background);
   color: var(--foreground);
 }
+
+.footer-pill {
+  background: rgba(255, 255, 255, 0.95);
+}

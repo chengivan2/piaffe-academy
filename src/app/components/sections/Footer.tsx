@@ -1,4 +1,3 @@
-// Footer.tsx
 "use client";
 
 import Image from "next/image";
@@ -6,7 +5,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="w-full flex justify-center items-center py-8 px-4 bg-transparent">
-      <div className="relative w-full max-w-3xl rounded-full overflow-hidden shadow-lg flex items-center justify-between px-8 py-6" style={{ background: "rgba(255,255,255,0.95)" }}>
+  <div className="footer-pill relative w-full max-w-3xl rounded-full overflow-hidden shadow-lg flex items-center justify-between px-8 py-6">
         <Image
           src="/equestrian-horse-jump.jpg"
           alt="Footer Background"
