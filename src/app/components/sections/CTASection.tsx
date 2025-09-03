@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 export default function CTASection() {
   return (
     <section className="relative min-w-full min-h-[100vh] flex items-center justify-center bg-[url('/two-horses.jpg')] bg-cover bg-center bg-fixed">
