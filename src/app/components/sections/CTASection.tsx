@@ -8,11 +8,11 @@ export default function CTASection() {
       <div className="absolute inset-0 bg-black/80 bg-opacity-20 z-10" />
       <div className="relative z-20 flex flex-col items-center justify-center text-center px-6 py-16">
         <div className="mb-6 flex flex-col items-center">
-          <span className="cta-big-percent text-white text-5xl md:text-7xl font-black drop-shadow-lg tracking-tight">
-            20%
-          </span>
           <span className="cta-small-percent text-white text-2xl md:text-3xl font-bold drop-shadow-md tracking-tight">
             10%
+          </span>
+          <span className="cta-big-percent text-white text-5xl md:text-7xl font-black drop-shadow-lg tracking-tight">
+            20%
           </span>
         </div>
         <h2 className="text-white text-4xl md:text-5xl font-extrabold mb-4 drop-shadow-lg">
@@ -25,7 +25,7 @@ export default function CTASection() {
         <button
           type="button"
           title="Claim Your Discount"
-          className="bg-[#000068] text-black font-semibold px-8 py-4 rounded shadow hover:bg-gray-200 transition text-lg"
+          className="bg-[#000068] text-white font-semibold px-8 py-4 rounded shadow hover:bg-gray-200 transition text-lg"
         >
           Claim Your Discount
         </button>
