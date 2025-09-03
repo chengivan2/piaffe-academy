@@ -21,7 +21,7 @@ export default function DelayedLoading({ children, minDuration = 3000 }: Delayed
   return showContent ? (
     children
   ) : (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-white">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#f4f4f4]">
       <Image
         src="/equestrian-horse-turn-gif.gif"
         alt="Loading..."
