@@ -23,6 +23,15 @@ body {
   color: var(--foreground);
 }
 
+.cta-big-percent {
+  line-height: 1;
+}
+
+.cta-small-percent {
+  line-height: 1;
+  margin-top: -1.5rem;
+}
+
 .footer-pill {
   background: rgba(255, 255, 255, 0.95);
 }
