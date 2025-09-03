@@ -11,9 +11,14 @@ export default function CTASection() {
           We've Doubled Our Discount!
         </h2>
         <p className="text-white text-lg md:text-xl mb-6 max-w-xl drop-shadow">
-          Take advantage of our limited-time offer and save even more on world-class equestrian care and services. Don't miss out!
+          Take advantage of our limited-time offer and save even more on
+          world-class equestrian care and services. Don't miss out!
         </p>
-        <button className="bg-white text-black font-semibold px-8 py-4 rounded shadow hover:bg-gray-200 transition text-lg">
+        <button
+          type="button"
+          title="Claim Your Discount"
+          className="bg-white text-black font-semibold px-8 py-4 rounded shadow hover:bg-gray-200 transition text-lg"
+        >
           Claim Your Discount
         </button>
       </div>
