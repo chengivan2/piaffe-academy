@@ -25,9 +25,8 @@ export default function DelayedLoading({ children, minDuration = 3000 }: Delayed
       <Image
         src="/equestrian-horse-turn-gif.gif"
         alt="Loading..."
-        width={1920}
-        height={1080}
-        className="object-cover w-full h-full"
+        fill
+        className="object-contain"
         priority
         unoptimized
       />
